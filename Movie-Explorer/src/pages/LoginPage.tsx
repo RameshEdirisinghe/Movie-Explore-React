@@ -4,7 +4,7 @@ import { User, Lock, ArrowRight, Popcorn } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import Button from '../components/ui/Button';
 
-// Import your background image (adjust path as needed)
+// Import background image
 import bgImage from '../assets/bg-img.jpg';
 
 const LoginPage: React.FC = () => {
@@ -57,7 +57,7 @@ const LoginPage: React.FC = () => {
         />
       </div>
       
-      {/* More Transparent Login Card */}
+      {/* Transparent Login Card */}
       <div className="w-full max-w-md z-10">
         <div className="bg-gray-800/65 rounded-xl shadow-2xl overflow-hidden border border-white/20 backdrop-blur-sm">
           {/* Header */}
