@@ -2,6 +2,7 @@
 
 A modern web application for exploring movies, viewing details, and discovering trending films. Built with React, TypeScript, and TMDb API.
 
+<<<<<<< HEAD
 ## 🚀 Features
 
 - User authentication with login interface
@@ -30,6 +31,38 @@ Experience MovieExplorer in action: [app.movieexplorer.vercel.app](https://app.m
 - Docker for containerization
 - Vercel for hosting and deployment
 
+=======
+GitLab Repo - https://gitlab.com/rameshedirisinghe1/movie-explorer-app.git
+
+## 🚀 Features
+
+- User authentication with login interface
+- Movie search functionality with real-time results
+- Trending movies section with latest popular films
+- Detailed movie view with overview, genre, cast, and YouTube trailer
+- Favorites system to save and revisit preferred movies (with localStorage persistence)
+- Light/dark mode toggle with yellow and black theme
+- Mobile-first responsive design that works across all devices
+- "Load More" button for pagination of movie results
+- Dockerized for easy deployment and development
+- Optimized for Vercel deployment
+
+## 📱 Live Demo
+
+Experience MovieExplorer in action: [app.movieexplorer.vercel.app](https://app.movieexplorer.vercel.app)
+
+## 🖥️ Technologies Used
+
+- React with TypeScript
+- React Router for navigation
+- Tailwind CSS for styling
+- TMDb API for movie data
+- Context API for state management
+- Lucide React for icons
+- Docker for containerization
+- Vercel for hosting and deployment
+
+>>>>>>> 13298601efa3cac5d7b1d41f8fcc2feabac2f0c8
 ## 🛠️ Quick Start
 
 ### Option 1: Local Development
@@ -45,7 +78,11 @@ Experience MovieExplorer in action: [app.movieexplorer.vercel.app](https://app.m
    npm install
    ```
 
+<<<<<<< HEAD
 3. update  `.env` file in the root directory with your TMDb API key
+=======
+3. Create a `.env` file in the root directory with your TMDb API key
+>>>>>>> 13298601efa3cac5d7b1d41f8fcc2feabac2f0c8
    ```
    VITE_TMDB_API_KEY=your_tmdb_api_key
    VITE_TMDB_API_URL=https://api.themoviedb.org/3
@@ -172,3 +209,8 @@ docker build -t movieexplorer:prod .
 ## 📝 License
 
 This project is for educational purposes only and is not affiliated with or endorsed by TMDb.
+<<<<<<< HEAD
+=======
+
+TMDb data is provided by The Movie Database API but is not endorsed or certified by TMDb.
+>>>>>>> 13298601efa3cac5d7b1d41f8fcc2feabac2f0c8
