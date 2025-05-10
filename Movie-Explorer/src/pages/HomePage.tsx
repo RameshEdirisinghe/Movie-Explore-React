@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Film } from 'lucide-react';
 import { useMovies } from '../contexts/MovieContext';
 import MovieGrid from '../components/layout/MovieGrid';
-import MovieFilters, { type FilterOptions } from '../components/ui/MovieFilters';
 
 const HomePage: React.FC = () => {
   const { 
@@ -14,22 +13,7 @@ const HomePage: React.FC = () => {
     loadMoreTrending
   } = useMovies();
 
-  const [filters, setFilters] = useState<FilterOptions>({
-    genre: '',
-    year: '',
-    minRating: ''
-  });
-
-  useEffect(() => {
-    getTrendingMovies(1, filters);
-  }, [filters]);
-
   const hasMoreTrending = currentPage < totalPages;
-
-  const handleFilterChange = (newFilters: FilterOptions) => {
-    setFilters(newFilters);
-  };
-
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white transition-colors duration-300">
       {/* Hero Section */}
@@ -64,7 +48,6 @@ const HomePage: React.FC = () => {
       
       {/* Trending Movies Section */}
       <section className="container mx-auto px-4 py-12">
-        <MovieFilters onFilterChange={handleFilterChange} filters={filters} />
         <MovieGrid
           title="Trending Movies"
           movies={trendingMovies}

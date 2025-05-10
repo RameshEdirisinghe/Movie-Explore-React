@@ -1,6 +1,3 @@
-/**
- * SearchPage displays search results with load more functionality
- */
 import React, { useEffect, useState } from 'react';
 import { useMovies } from '../contexts/MovieContext';
 import MovieGrid from '../components/layout/MovieGrid';
