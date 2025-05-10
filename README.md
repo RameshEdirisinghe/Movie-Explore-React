@@ -32,7 +32,6 @@ Experience MovieExplorer in action: [app.movieexplorer.vercel.app](https://app.m
 - Docker for containerization
 - Vercel for hosting and deployment
 
->>>>>>> 13298601efa3cac5d7b1d41f8fcc2feabac2f0c8
 ## 🛠️ Quick Start
 
 ### Option 1: Local Development
@@ -48,11 +47,7 @@ Experience MovieExplorer in action: [app.movieexplorer.vercel.app](https://app.m
    npm install
    ```
 
-<<<<<<< HEAD
-3. update  `.env` file in the root directory with your TMDb API key
-=======
-3. Create a `.env` file in the root directory with your TMDb API key
->>>>>>> 13298601efa3cac5d7b1d41f8fcc2feabac2f0c8
+3. Update `.env` file in the root directory with your TMDb API key
    ```
    VITE_TMDB_API_KEY=your_tmdb_api_key
    VITE_TMDB_API_URL=https://api.themoviedb.org/3
@@ -179,5 +174,3 @@ docker build -t movieexplorer:prod .
 ## 📝 License
 
 This project is for educational purposes only and is not affiliated with or endorsed by TMDb.
-
-
