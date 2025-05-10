@@ -1,10 +1,7 @@
-/**
- * MovieContext provides global state management for movies data
- * Handles API fetching, search, favorites, and recent searches
- */
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 import axios from 'axios';
-import { Movie, SearchResults, MovieDetails, Credits, Video } from '../types/movie';
+import type { Credits, Movie, MovieDetails, SearchResults, Video } from '../types/movie';
+
 
 // API configuration
 const API_URL = import.meta.env.VITE_TMDB_API_URL;

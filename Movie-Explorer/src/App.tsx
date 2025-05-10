@@ -4,6 +4,7 @@ import { AuthProvider, useAuth } from './contexts/AuthContext';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import Footer from './components/layout/Footer';
+import Header from './components/layout/Header';
 
 // Protected route wrapper component
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -11,6 +12,7 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) =
   return isAuthenticated ?     
   <div className="flex flex-col min-h-screen bg-gray-900 dark:bg-gray-900">
       <main className="pt-16 flex-grow">
+      <Header/>
         {children}
       </main>
       <Footer />
