@@ -2,6 +2,8 @@
 
 A modern web application for exploring movies, viewing details, and discovering trending films. Built with React, TypeScript, and TMDb API.
 
+GitLab Repo - https://gitlab.com/rameshedirisinghe1/movie-explorer-app.git
+
 ## 🚀 Features
 
 - User authentication with login interface
