@@ -6,7 +6,7 @@ import {
 import { useMovies } from '../contexts/MovieContext';
 import Button from '../components/ui/Button';
 import MovieTrailer from '../components/MovieTrailer';
-import { Video, MovieDetails, CastMember } from '../types/movie';
+import { type CastMember, type MovieDetails, type Video } from '../types/movie';
 
 const MovieDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();

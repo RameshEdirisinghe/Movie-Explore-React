@@ -1,10 +1,10 @@
 
 import React from 'react';
 import { X } from 'lucide-react';
-import { Video } from '../types/movie';
+import { type Video } from '../types/movie';
 
 interface MovieTrailerProps {
-  video: Video | null;
+  video: Video| null;
   onClose: () => void;
 }
 
