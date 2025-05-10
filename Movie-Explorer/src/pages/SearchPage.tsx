@@ -14,27 +14,13 @@ const SearchPage: React.FC = () => {
     searchMovies
   } = useMovies();
 
-  const [filters, setFilters] = useState<FilterOptions>({
-    genre: '',
-    year: '',
-    minRating: ''
-  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {
-    if (searchQuery) {
-      searchMovies(searchQuery, 1, filters);
-    }
-  }, [filters]);
-
   const hasMoreResults = currentPage < totalPages;
 
-  const handleFilterChange = (newFilters: FilterOptions) => {
-    setFilters(newFilters);
-  };
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white transition-colors duration-300">
@@ -54,8 +40,6 @@ const SearchPage: React.FC = () => {
             Found {searchResults.length} results out of {totalPages > 0 ? totalPages * 20 : 0} total matches
           </p>
         )}
-
-        <MovieFilters onFilterChange={handleFilterChange} filters={filters} />
         
         <MovieGrid
           movies={searchResults}
