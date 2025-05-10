@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sun, Moon, Film, Heart, LogOut } from 'lucide-react';
+import { Menu, X, Sun, Moon, Heart, LogOut, Popcorn } from 'lucide-react';
 import { useTheme } from '../../contexts/ThemeContext';
 import { useAuth } from '../../contexts/AuthContext';
 import SearchBar from '../ui/SearchBar';
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 text-yellow-500 font-bold text-xl">
-            <Film />
+            <Popcorn />
             <span className="hidden sm:inline">MovieExplorer</span>
           </Link>
 

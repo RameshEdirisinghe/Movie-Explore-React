@@ -13,12 +13,6 @@ const Footer: React.FC = () => {
               &copy; {currentYear} Ramesh Edirisinghe. All rights reserved.
             </p>
           </div>
-          
-          <div className="flex items-center text-sm">
-            <span>Made with</span>
-            <Heart size={16} className="mx-1 text-red-500 fill-red-500" />
-            <span>by RameshEd</span>
-          </div>
         </div>
         
         <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-sm">
