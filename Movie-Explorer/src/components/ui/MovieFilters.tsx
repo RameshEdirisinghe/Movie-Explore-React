@@ -56,8 +56,6 @@ const MovieFilters: React.FC<MovieFiltersProps> = ({ onFilterChange, filters }) 
   return (
     <div className="bg-gray-800 dark:bg-gray-800 p-4 rounded-lg mb-6">
       <div className="flex items-center gap-2 mb-4">
-        <Filter size={20} className="text-yellow-500" />
-        <h2 className="text-lg font-semibold text-white">Filters</h2>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
