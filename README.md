@@ -74,7 +74,7 @@ Experience MovieExplorer in action: [app.movieexplorer.vercel.app](https://app.m
    docker-compose up -d
    ```
 
-4. Access the application at http://localhost:3000
+4. Access the application at http://localhost:5173
 
 ## 🚢 Deployment
 
